@@ -5,6 +5,8 @@
 }
 
 .about__img {
+    color: var(--title-color);    
+    font-size:200px;
     width: 350px;
     border-radius: 1.5rem;
     justify-self: center;
@@ -12,6 +14,7 @@
 
 .about__info {
     grid-template-columns: repeat(3, 140px);
+    align-items: center;
     gap: 0.5rem;
     margin-bottom: var(--mb-2);    
 }

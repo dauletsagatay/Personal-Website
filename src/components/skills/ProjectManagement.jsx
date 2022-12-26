@@ -40,7 +40,7 @@ const ProjectManagement = () => {
                     <i class='bx bx-badge-check' ></i>
                     <div>
                         <h3 className="skills__name">Scrum</h3>
-                        <span className="skills__level">Advanced</span>
+                        <span className="skills__level">Proficient</span>
                     </div>
                 </div>            
 
