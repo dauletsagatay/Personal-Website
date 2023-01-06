@@ -1,6 +1,17 @@
 import React from "react";
 import "./portfolio.css";
 import FD from "../../assets/family-dash.PNG";
+import DStream from "../../assets/DStream.PNG";
+
+import {
+  Box,
+  Card,
+  CardContent,
+  CardMedia,
+  Link,
+  Stack,
+  Typography,
+} from "@mui/material";
 
 const Portfolio = () => {
   return (
@@ -8,25 +19,96 @@ const Portfolio = () => {
       <h2 className="section__title">Portfolio</h2>
       <span className="section__subtitle">My recent projects</span>
 
-      <div className="portfolio__container">
-        <div className="portfolio__content">
-          <h3 className="portfolio__title">Family Dash</h3>
-          <p className="portfolio__description">
-            My very first portfolio project. Family Dash is fully functioning,
-            responsive social media app MVP developed using MERN stack: <br />-
-            Node and Express on server/api side <br />- React and Redux on
-            client side. <br />- MongoDB (Mongoose) on database side
-          </p>
-          <img src={FD} alt="" className="portfolio__photo" />
-          <a
-            download=""
-            href="https://family-dash.onrender.com/"
-            className="button button--flex portfolio__button"
+      <Stack
+        direction={{ xs: "column", sm: "column", md: "row" }}
+        justifyContent="space-around"
+        textAlign="center"
+        spacing={2}
+        // sx={{ width: "97%", m: "1.5%" }}
+      >
+        <Card
+          sx={{
+            width: { xs: "100%", sm: "100%", md: "50%" },
+            boxShadow: "none",
+            borderRadius: "10px",
+          }}
+        >
+          <CardMedia
+            image={FD}
+            alt=""
+            sx={{
+              display: "block",
+              ml: "",
+              mr: "auto",
+              width: "100%",
+              height: 350,
+            }}
+          />
+          <Link href="https://family-dash.onrender.com/">
+            <Typography
+              sx={{ mt: "15px" }}
+              variant="h5"
+              fontWeight="bold"
+              color="hsl(0, 0%, 20%)"
+            >
+              Family Dash
+            </Typography>
+          </Link>
+
+          <CardContent
+            sx={{
+              height: "160px",
+            }}
           >
-            Explore more...
-          </a>
-        </div>
-      </div>
+            My very first portfolio project. Family Dash is fully functioning,
+            responsive social media app MVP developed using MERN stack: <br />
+            - Node and Express on server/api side <br />- React and Redux on
+            client side. <br />- MongoDB (Mongoose) on database side
+          </CardContent>
+        </Card>
+
+        <Card
+          sx={{
+            width: { xs: "100%", sm: "100%", md: "50%" },
+            boxShadow: "none",
+            borderRadius: "10px",
+          }}
+        >
+          <CardMedia
+            image={DStream}
+            alt=""
+            sx={{
+              display: "block",
+              ml: "auto",
+              mr: "auto",
+              width: "100%",
+              objectFit: "contain",
+              height: 350,
+            }}
+          />
+          <Link href="https://dauletsagatay.github.io/DStream/">
+            <Typography
+              sx={{ mt: "15px" }}
+              variant="h5"
+              fontWeight="bold"
+              color="hsl(0, 0%, 20%)"
+            >
+              DStream
+            </Typography>
+          </Link>
+
+          <CardContent
+            sx={{
+              height: "160px",
+            }}
+          >
+            Platform for video searching and browsing developed using Youtube
+            API:
+            <br />- React for front-end <br />- Material-UI for design <br />-
+            RapidAPI and Axios for fetching data
+          </CardContent>
+        </Card>
+      </Stack>
     </section>
   );
 };
