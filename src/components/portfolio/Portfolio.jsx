@@ -2,6 +2,7 @@ import React from "react";
 import "./portfolio.css";
 import FD from "../../assets/family-dash.PNG";
 import DStream from "../../assets/DStream.PNG";
+import SoileS from "../../assets/SoileS.PNG";
 
 import {
   Box,
@@ -21,14 +22,15 @@ const Portfolio = () => {
 
       <Stack
         direction={{ xs: "column", sm: "column", md: "row" }}
-        justifyContent="space-around"
+        flexWrap="wrap"
+        justifyContent="center"
+        gap={5}
         textAlign="center"
-        spacing={2}
         // sx={{ width: "97%", m: "1.5%" }}
       >
         <Card
           sx={{
-            width: { xs: "100%", sm: "100%", md: "50%" },
+            width: { xs: "100%", sm: "100%", md: "40%" },
             boxShadow: "none",
             borderRadius: "10px",
           }}
@@ -69,7 +71,7 @@ const Portfolio = () => {
 
         <Card
           sx={{
-            width: { xs: "100%", sm: "100%", md: "50%" },
+            width: { xs: "100%", sm: "100%", md: "40%" },
             boxShadow: "none",
             borderRadius: "10px",
           }}
@@ -106,6 +108,45 @@ const Portfolio = () => {
             API:
             <br />- React for front-end <br />- Material-UI for design <br />-
             RapidAPI and Axios for fetching data
+          </CardContent>
+        </Card>
+
+        <Card
+          sx={{
+            width: { xs: "100%", sm: "100%", md: "40%" },
+            boxShadow: "none",
+            borderRadius: "10px",
+          }}
+        >
+          <CardMedia
+            image={SoileS}
+            alt=""
+            sx={{
+              display: "block",
+              ml: "",
+              mr: "auto",
+              width: "100%",
+              height: 350,
+            }}
+          />
+          <Link href="https://dauletsagatay.github.io/SoileS/">
+            <Typography
+              sx={{ mt: "15px" }}
+              variant="h5"
+              fontWeight="bold"
+              color="hsl(0, 0%, 20%)"
+            >
+              SoileS
+            </Typography>
+          </Link>
+
+          <CardContent
+            sx={{
+              height: "160px",
+            }}
+          >
+            Chat application developed using: <br />
+            - React and SASS on front-end <br />- Firebase on back-end
           </CardContent>
         </Card>
       </Stack>
