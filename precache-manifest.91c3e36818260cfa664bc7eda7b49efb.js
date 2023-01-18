@@ -1,23 +1,23 @@
 self.__precacheManifest = [
   {
-    "revision": "50e45115097e49a7d3b9",
-    "url": "/Personal-Website/static/css/main.d748319c.chunk.css"
+    "revision": "a73eef46654bc96c88b3",
+    "url": "/Personal-Website/static/css/main.3142a386.chunk.css"
   },
   {
-    "revision": "50e45115097e49a7d3b9",
-    "url": "/Personal-Website/static/js/main.50e45115.chunk.js"
+    "revision": "a73eef46654bc96c88b3",
+    "url": "/Personal-Website/static/js/main.a73eef46.chunk.js"
   },
   {
-    "revision": "45c005a9fcb22cf17626",
-    "url": "/Personal-Website/static/js/1.45c005a9.chunk.js"
+    "revision": "ed5c3b02035f74d89a14",
+    "url": "/Personal-Website/static/js/1.ed5c3b02.chunk.js"
   },
   {
     "revision": "87f34ce215affaea4209",
     "url": "/Personal-Website/static/js/runtime~main.87f34ce2.js"
   },
   {
-    "revision": "3859500be01ea296328a43082a32c038",
-    "url": "/Personal-Website/static/media/DS_CV.3859500b.pdf"
+    "revision": "b0990c3cc979a930cee3db518eb159ca",
+    "url": "/Personal-Website/static/media/DS_CV.b0990c3c.pdf"
   },
   {
     "revision": "9e903f5cf9a527ed834a011bf568aec1",
@@ -32,6 +32,10 @@ self.__precacheManifest = [
     "url": "/Personal-Website/static/media/SoileS.d15ea09a.PNG"
   },
   {
+    "revision": "08ef58c77a5f16f94c04c7f711cdc495",
+    "url": "/Personal-Website/static/media/ChatAI.08ef58c7.PNG"
+  },
+  {
     "revision": "5810d2d6c183fc3d7bb892e165dc3faf",
     "url": "/Personal-Website/static/media/profile.5810d2d6.jpeg"
   },
@@ -40,7 +44,7 @@ self.__precacheManifest = [
     "url": "/Personal-Website/static/media/about.0001e1f0.jpg"
   },
   {
-    "revision": "62f9f77583c9972e6b57c0002ebb376c",
+    "revision": "ce4c3872b462eb3657cae62902389a48",
     "url": "/Personal-Website/index.html"
   }
 ];
