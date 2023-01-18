@@ -3,6 +3,7 @@ import "./portfolio.css";
 import FD from "../../assets/family-dash.PNG";
 import DStream from "../../assets/DStream.PNG";
 import SoileS from "../../assets/SoileS.PNG";
+import ChatAI from "../../assets/ChatAI.PNG";
 
 import {
   Box,
@@ -147,6 +148,46 @@ const Portfolio = () => {
           >
             Chat application developed using: <br />
             - React and SASS on front-end <br />- Firebase on back-end
+          </CardContent>
+        </Card>
+
+        <Card
+          sx={{
+            width: { xs: "100%", sm: "100%", md: "40%" },
+            boxShadow: "none",
+            borderRadius: "10px",
+          }}
+        >
+          <CardMedia
+            image={ChatAI}
+            alt=""
+            sx={{
+              display: "block",
+              ml: "",
+              mr: "auto",
+              width: "100%",
+              height: 350,
+            }}
+          />
+          <Link href="https://d-ai.vercel.app/">
+            <Typography
+              sx={{ mt: "15px" }}
+              variant="h5"
+              fontWeight="bold"
+              color="hsl(0, 0%, 20%)"
+            >
+              ChatAI
+            </Typography>
+          </Link>
+
+          <CardContent
+            sx={{
+              height: "160px",
+            }}
+          >
+            Chat bot application for interacting with AI developed using
+            OpenAI’s API, ChatGPT: <br />
+            - Vite on front-end <br />- Node and Express on back-end
           </CardContent>
         </Card>
       </Stack>
